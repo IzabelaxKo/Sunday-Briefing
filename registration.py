@@ -16,6 +16,7 @@ for user in data_get:
     if user['email'] == email:
         print("You are already registered!")
         
+
 if isOk:
     r.post("https://api.sheety.co/[your_api]/sundayBriefing/sheet1", json={"sheet1": {"email": email, "userName": name, "topics": topics}})
     print("You have been registered!")
